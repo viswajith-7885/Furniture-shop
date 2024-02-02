@@ -1,0 +1,17 @@
+{
+    "users":[
+        {
+            "name":"varun",
+            "age":22    
+    },
+    {
+        "name":"srekanth",
+        "age":24   
+},
+{
+         "name":"aswin",
+         "age":33 
+}
+    ]
+    
+}
