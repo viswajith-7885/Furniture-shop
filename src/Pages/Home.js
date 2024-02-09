@@ -1,13 +1,16 @@
 import React from 'react'
-import Header from '../Components/Navbar'
 import Userslist from '../Components/Userslist'
+import Footer from '../Components/Footer'
+import Products from '../Components/Products'
+
 
 
 function Home() {
   return (
     <div>
-    <Header/>
     <Userslist/>
+    <Products/>
+    <Footer/>
     </div>
   )
 }

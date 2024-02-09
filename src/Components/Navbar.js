@@ -2,9 +2,10 @@ import React from 'react'
 import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
+import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -12,15 +13,23 @@ function Header() {
     <div>
     <Navbar className="bg-body-tertiary justify-content-between">
       <Form inline>
-        <InputGroup>
-          <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
-          <Form.Control
-            placeholder="Username"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-          />
-        </InputGroup>
       </Form>
+      <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+            
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to ="/beds">Beds</Nav.Link>
+            <Nav.Link as={Link} to ="/sofas">Sofas</Nav.Link>
+          
+
+          
+            
+           
+          
+          </Nav>
       <Form inline>
         <Row>
           <Col xs="auto">
@@ -31,7 +40,7 @@ function Header() {
             />
           </Col>
           <Col xs="auto">
-            <Button type="submit">Submit</Button>
+            <Button type="submit">Search</Button>
           </Col>
         </Row>
       </Form>
